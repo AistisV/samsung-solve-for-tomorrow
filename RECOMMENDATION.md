@@ -1,3 +1,23 @@
+# Recommendation (round 4: optimised for winning)
+
+**Process:** after round 3 the team felt its finalists were too "adult" to win. Round 4 re-targeted what actually wins Solve for Tomorrow Baltics: a relatable problem, a proven model abroad, a working prototype, AI that is actually useful, and our own pilot numbers ([`research/round4/BRIEF.md`](research/round4/BRIEF.md)). Six parallel scouts generated about 140 fresh ideas. The 10 best went to a 3-judge panel: a Samsung juror, the real users, and the 16-year-old team that has to build it. Full write-up: [`research/round4/RESULTS.md`](research/round4/RESULTS.md).
+
+## The final picks
+
+| Rank | Idea | Theme | In one line |
+|---|---|---|---|
+| 🥇 | **Oro sargas: classroom air & heat coach** | Sustainability | A box in each classroom, displayed on an upcycled old Galaxy phone. AI tells the class *when and how long* to air (at the bell), checks outdoor smoke first, and counts the € lost to windows left open while the heating runs. The municipality returns half the savings (50/50 model). |
+| 🥈 | **HeartSquad: every team a lifesaver squad** | Sport ("safe sport") | A €40 home-built CPR torso + phone pose AI turns a PE lesson into scored CPR training. Denmark's school CPR: bystander CPR 20% → 77%. A juror tries it live. |
+| 🥉 | **RecessBox** | Sport | A break-time kit locker opened with a student card; AI learns which games and kit get used and suggests what fits. Hook: phones left Lithuanian school breaks on 1 Sep 2026. Estonia/Finland models. |
+| 4 | **ShowerCoach** | Sustainability (home) | A clip-on shower meter showing € ticking up live; Swiss field study −22%. |
+| (5) | Whistle wristband | Sport (inclusion) | On-device AI hears the referee's whistle and buzzes deaf players' wrists. Only with a deaf-sport partner. |
+
+**Our advice:** if the team wants sustainability (its stated lean), go with **Oro sargas**. It has the easiest pilot (rooms, not people, so no parent consent), the heating season starts now, it is the cheapest build, and it has the best Samsung story. Never pitch it as "a CO₂ monitor"; lead with the heat € and the outdoor-smoke decision. If the team is excited by sport, **HeartSquad** has the best live demo of everything found. Check the theme fit with a mentor before Oct 16.
+
+---
+
+# Earlier rounds
+
 # Recommendation (round 3: 8 scouts + 4 red-team reviewers)
 
 **Process:** 8 parallel research scouts (energy, water/agri, waste, nature, mobility, sport, global winners, LT policy/deadlines) generated ~200 ideas and filtered them against the team's hard criteria ([`research/round3/BRIEF.md`](research/round3/BRIEF.md)). The top 9 were then attacked by 3 red-team reviewers, each from 4 angles: a skeptical Samsung juror, the real customer, a domain scientist, and the 16-year-old team building it. A 4th "gem hunter" searched all 200 for overlooked ideas and hybrids.
