@@ -27,7 +27,7 @@ Full rules (LT original): [`research/rules-2026-lt.md`](research/rules-2026-lt.m
 |---|---|
 | [`rubric.md`](rubric.md) | Scoring rubric derived from official criteria (38.x and 48.x) |
 | [`research/`](research/) | Past winners, local data, existing solutions |
-| [`ideas/`](ideas/) | Raw idea pool (divergent phase) |
+| [`ideas/`](ideas/) | Raw idea pool: round 1 (problem-first) and [round 2 (tech-first)](ideas/round2-tech-first.md) |
 | [`shortlist.md`](shortlist.md) | Scored + ranked ideas |
 | [`deep-dives/`](deep-dives/) | Full write-ups of top candidates |
 | [`RECOMMENDATION.md`](RECOMMENDATION.md) | Final pick + runner-up |

@@ -30,3 +30,13 @@
 
 ## 5. Verdict
 **Score ~76.** The most memorable idea on the list and a great hardware showcase, but liability, seasonality and a weak link to *students'* activity hold it back. Worth keeping if the team is hardware-heavy and wants a "wow" project.
+
+---
+
+## 6. Round-2 upgrade: Ice-safe 2.0 (one buoy is a point, the model is the whole country)
+- Ice growth follows **Stefan's law**: thickness ∝ √(accumulated freezing degree-days), with a *site-specific* coefficient. Calibrated models reach **RMSE ≈ 2.3 cm** during ice growth ([PLOS One](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0208519), [Water 2022](https://doi.org/10.3390/w14233886)).
+- **Sentinel-1 SAR** sees through clouds and detects *when* each lake freezes (ice-on date) with deep learning ([ISPRS 2020](https://arxiv.org/pdf/2002.07040), [open code](https://github.com/prs-eth/sentinel_lakeice)).
+- **Our buoys provide the ground truth** that calibrates the coefficient per lake type (size, depth, snow cover).
+- Result: from a handful of buoys, **estimated thickness for all ~3,000 lakes**, updated daily from weather data, with an honest uncertainty band ("likely 6–10 cm: not safe").
+
+This makes Ice-safe much more tech-rich (IoT + satellite + physics-informed ML), but the liability, seasonality and "users are adult fishers" problems remain. **Revised score: 79.**

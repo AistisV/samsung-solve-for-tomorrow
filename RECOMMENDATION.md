@@ -1,40 +1,45 @@
-# Recommendation
+# Recommendation (round 2)
 
-## 🥇 Pick: **WellWatch (*Šulinio sargas*)** — Sustainability theme
+> Round 1 picked WellWatch (phone reads nitrate strips). Feedback: *"what's the tech help here?"* That was fair: it failed the **collapse test** (remove the tech and the idea mostly still works). Round 2 restarted from technology. See [`ideas/round2-tech-first.md`](ideas/round2-tech-first.md).
 
-> *"700,000 Lithuanians drink from wells nobody checks. We turned a €0.40 test strip, a phone and a school class into the country's first nitrate map."*
+## 🥇 BeetleNose (*Miško nosis*): Sustainability
+> *"By the time a spruce turns brown, the beetles have already moved on to the next ten trees. Our €30 sensor smells them in the first week."*
 
-Full write-up: [`deep-dives/01-wellwatch.md`](deep-dives/01-wellwatch.md)
+Solar sensor nodes strapped to spruces at high-risk stand edges. A **Bosch BME688 AI e-nose** smells the attack chemistry (tree defence volatiles + beetle aggregation pheromone), and a **microphone hears larvae boring** (168 vs 2.6 "cracks" per minute in infested vs healthy trunks). **LoRa** sends an alert to the forest owner, who removes the tree *before* the brood flies out.
 
-### Why this one wins
-1. **Specific but not weird.** This answers your original worry directly. It's a surprising, very Lithuanian problem that most people (and judges) have never thought about. Yet it's instantly credible, because every judge knows someone with a well at the family's country house (*sodyba*).
-2. **Unbeatable local evidence** (criterion 38.4): a country that drinks ~100% groundwater; the whole territory a nitrate-vulnerable zone; 1 in 4 people on private wells; ~1 in 3 wells contaminated; a free state test that only 241 households used last year.
-3. **We can bring real data.** Most teams submit a concept. We can test 100+ real wells in October and submit a real map with real numbers. Last season's jury explicitly rewarded "a ready prototype and a well-thought-out development plan".
-4. **Policy hook** (38.6): produces data that the NVSC (national public-health centre) and municipalities lack; argues for widening free testing; feeds Nitrates Directive enforcement.
-5. **Low competition in judges' memory.** Last season was sport-only, so the sport pile will be crowded with repeat "gamified movement app" ideas. The sustainability pile's usual suspects (recycling apps, food waste, carbon trackers) don't look like this.
-6. **Low risk.** No medical claims, cheap (< €500 pilot), privacy solvable, no hardware that could fail on stage.
-7. **Emotional story for the English final:** students testing their grandparents' wells and (if the pilot finds one) a household with a newborn drinking contaminated water. That's a story people retell.
+- **What the tech does:** detects things humans physically can't (ppb smells, faint sounds). Satellites only see the damage weeks later. Collapse test ✅.
+- **Real science:** a 2024 Czech study found e-noses (including the BME688) detect an attack **within 1 week**; Fraunhofer showed acoustic detection. **Nobody has turned it into a product** for the 255,000 Lithuanian private forest owners.
+- **Real crisis:** ~1 million m³ of spruce lost in 2023; beetle populations near record levels.
+- **Hardware demo:** open a commercial bark-beetle pheromone lure next to our box on stage and the alert fires.
+- **Honest risk:** it isn't proven to work in a real, windy forest at scale. That's the research frontier. Mitigations: sensors sit on the trunk (not above the canopy), smell + sound as two independent signals, and a spring-2027 field pilot with foresters.
 
-### Its weakness, and the fix
-- *AI "wow" is moderate.* → Make the **risk map** the visual centrepiece (AI predicts risk everywhere, even where nobody has tested yet). Stretch goal for the final: a small **IoT nitrate probe** in a village monitoring well.
+Full deep dive: [`deep-dives/04-beetlenose.md`](deep-dives/04-beetlenose.md)
 
-## 🥈 Runner-up: **KneeGuard** — Sport theme
-AI pose coach for youth ACL-prevention warm-ups. Best choice **if the team strongly prefers sport and loves computer vision**. Note that it had to drop the "AI predicts injury" claim after research showed drop-jump screening doesn't work (see [`deep-dives/02-acl-scan.md`](deep-dives/02-acl-scan.md)).
+## 🥈 WellWatch 2.0: Sustainability (keeps the original idea, adds real tech)
+Instead of photographing strips, **build a €50–80 reagent-free UV-LED nitrate sensor** (nitrate absorbs deep-UV light; published low-cost designs exist). An in-well IoT probe gives continuous data, and a handheld version makes school campaigns precise. Keeps all of round 1's strengths (700k well users, 100% groundwater country, policy hook) and fixes the tech gap. The optics are harder to build, and the demo is less "wow" than BeetleNose.
+→ [`deep-dives/01-wellwatch.md` §8](deep-dives/01-wellwatch.md)
 
-## 🥉 Wildcard: **Ice-safe** — Sport theme
-The most memorable hardware project (solar ice-thickness buoys). Pick it only if the team is hardware-first and accepts the liability and seasonality risks ([`deep-dives/03-ice-safe.md`](deep-dives/03-ice-safe.md)).
+## 🥉 SoundCourt: Sport (the best sport idea by far)
+Phone camera + AI + **head-tracked spatial audio** turns the hoop, the ball and each teammate into sound, so **blind kids can play ball games with their sighted class**, not in a separate goalball league. Lithuania's blind goalball team are Paralympic champions (Rio 2016). The demo: **blindfold a judge, they shoot a basket by sound.** Weaker on local scale (small user group) and harder real-time engineering.
+→ [`deep-dives/05-soundcourt.md`](deep-dives/05-soundcourt.md)
+
+## Also strong: Ice-safe 2.0
+Buoys + Stefan's-law physics model + Sentinel-1 satellite → estimated ice thickness for all ~3,000 lakes. Very tech-rich, but has liability and seasonality problems. → [`deep-dives/03-ice-safe.md`](deep-dives/03-ice-safe.md)
+
+## Dropped in round 2
+KneeGuard (AI checks exercise form; overused), microplastic scanner (cool tech, unclear "so what"), smoke fingerprinting (ethics), thermal fawn-rescue drones (already mature in Germany), and more. Reasons are in the round-2 table.
 
 ---
 
-## If we go with WellWatch: next steps (before the **Oct 16** stage 1 deadline)
-1. **Team + teacher**: get a chemistry/biology teacher on board. They're the natural supervisor and have lab-safety credibility.
-2. **Stage 1 form**: write the short idea description (draft it in `submission/`; I can draft LT + EN).
-3. **Order strips** (≈200 × nitrate/nitrite, e.g. MN Quantofix 91313) and print colour reference cards.
-4. **Pick the pilot area**: ideally a farming district and/or the northern karst region (Biržai–Pasvalys), where groundwater is most vulnerable.
-5. **Call the local public-health bureau** (*visuomenės sveikatos biuras*) and ask whether they'd support or co-sign the pilot. A letter from them makes the submission much stronger.
-6. **Start the app MVP** (camera → card detection → colour classification → advice → anonymous upload).
+## How to choose between the top 3
+| If the team… | Pick |
+|---|---|
+| wants the most original tech + a hardware demo + a national-scale problem | **BeetleNose** |
+| wants the safest, most provable project (real data from real wells in October) with solid hardware | **WellWatch 2.0** |
+| wants sport, emotion, and the most unforgettable live demo | **SoundCourt** |
 
-## Open questions for the team
-- Does anyone have family in a rural area with a well? That's pilot site #1 and the opening line of the pitch.
-- Does anyone want the IoT stretch (nitrate probe) or keep it software-only?
-- Team name?
+## Next steps (stage 1 deadline: **Oct 16**)
+1. Team picks one (or tells me what feels off, and I'll iterate).
+2. I draft the stage 1 idea text (LT + EN).
+3. Order parts (BeetleNose: 2–3 BME688 boards, ESP32s, LoRa modules, mics, a pheromone lure; ~€150–250).
+4. Contact a mentor: LAMMC Institute of Forestry (Girionys) or VMU Agriculture Academy forestry faculty for BeetleNose; NVSPL/municipal public-health bureau for WellWatch; LASUC for SoundCourt.

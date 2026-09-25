@@ -83,3 +83,24 @@ Three layers. Each can be built by a school team; each adds value on its own.
 
 ## 7. Verdict
 **Revised score: 88/100.** The strongest combination of *local truth + real data we can collect ourselves + policy hook + low risk*. Weakest point: AI "wow" is moderate. Fix it by making the risk map visually impressive and by (stretch) adding an IoT probe.
+
+---
+
+## 8. Round-2 upgrade: WellWatch 2.0 (fixing the "where's the tech?" problem)
+
+**Honest reassessment:** in version 1.0, remove the phone and the idea mostly still works. People can read strips by eye just as well (Deltares). The real engine is a school campaign. It fails the collapse test. Honest tech score: 3/5 and 2/5 for the AI/IoT bonus.
+
+**The upgrade: build our own sensor.** Nitrate strongly absorbs deep-UV light. Research groups have shown that **cheap UV-LEDs (235 nm + 275 nm for organic-matter correction) + a photodiode** can measure nitrate *without reagents*, at a fraction of the cost of commercial probes (which cost €10k+).
+- [Low-cost 235 nm UV-LED detector (J. Chromatography A)](https://pubmed.ncbi.nlm.nih.gov/31151694/)
+- [Miniaturised 235 + 275 nm UVC-LED nitrate spectrophotometer (ACS ES&T Water)](https://pubs.acs.org/doi/10.1021/acsestwater.1c00351)
+- [UV diode–photodiode portable nitrate system (Sensors 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11359284/)
+- [Low-cost nitrate + DOC sensor for groundwater/soil/river water (Env. Sci. Europe 2026)](https://link.springer.com/article/10.1186/s12302-026-01397-6)
+
+**WellWatch 2.0 =**
+1. **A €50–80 in-well IoT probe** (UV-LEDs, photodiodes, ESP32, LoRa/NB-IoT) that measures nitrate **continuously**. Nitrate in shallow wells spikes after snowmelt, heavy rain and manure spreading, so a single yearly test misses the peaks. Continuous data shows *when* and *why*.
+2. **A handheld version of the same sensor** for school campaigns: pour a sample in and get a number in 10 s. Much more accurate than strips.
+3. **The AI risk map** (unchanged), now fed by real sensor data.
+
+**Demo:** dissolve a pinch of garden fertiliser in tap water on stage; the reading jumps past 50 mg/L and the map pin turns red.
+
+**Remaining risks:** deep-UV LEDs (235 nm) cost ~€50–150 each and are fragile; iron and turbidity in well water interfere (the 275 nm channel + calibration against NVSPL lab samples handles this); it takes real optics/electronics skill. **Revised score: 85.**

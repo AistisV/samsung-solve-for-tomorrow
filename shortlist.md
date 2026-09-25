@@ -1,5 +1,7 @@
 # Shortlist — scored
 
+> **Round 2 (current):** tech-first re-brainstorm with the collapse test and tech-weighted scoring → [`ideas/round2-tech-first.md`](ideas/round2-tech-first.md). Current ranking: **BeetleNose 87 · WellWatch 2.0 85 · SoundCourt 81 · Ice-safe 2.0 79**. Everything below is round 1, kept for the record.
+
 Scored with [`rubric.md`](rubric.md) (1–5 per row; weights T3 B2 C4 Q4 L4 I3 R2 D2 S1; total ×0.8 → /100).
 Scores are first-pass judgement. They get revised in the deep dives.
 
