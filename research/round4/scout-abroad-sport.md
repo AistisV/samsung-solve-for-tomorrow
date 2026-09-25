@@ -12,10 +12,10 @@ The strongest "proven abroad" sport stories are **not apps. They are school rout
 
 The winning move is to **take one proven routine and build the small piece of physical tech + AI that makes it run without a teacher having to organise it**. My top 4:
 
-1. **PertraukųDėžė (RecessBox)**: a smart, app-free equipment locker plus an AI "game master" for active breaks. Built on Schools on the Move, Schools in Motion and Sportbox. Best overall (16/18).
-2. **Traukinukas (Walking/Bike Bus)**: teen-led walking and bike buses to school with a GPS "locomotive" tracker and AI route-building. Built on the bike-bus movement and Dutch/Belgian school streets. Sport and sustainability crossover (15/18).
-3. **Mylia (Daily Mile LT)**: the 15-minute daily run, with an automatic lap-counting gate and an AI weather/air go/no-go plus class insights (15/18).
-4. **JudriPamoka (Active Lesson light)**: a classroom CO₂ + sitting-time sensor that triggers AI-generated, subject-linked 3-minute movement breaks. Built on Norway's ASK, physically active learning meta-analyses and Estonia (14/18).
+1. **PertraukųDėžė (RecessBox)**: a smart, app-free equipment locker plus an AI "game master" for active breaks. Built on Schools on the Move, Schools in Motion and Sportbox. Best overall (16/18; wins the tie on pilot ease and demo).
+2. **Traukinukas (Walking/Bike Bus)**: teen-led walking and bike buses to school with a GPS "locomotive" tracker and AI route-building. Built on the bike-bus movement and Dutch/Belgian school streets. Sport and sustainability crossover (16/18; ranked 2nd because of the weather and consent risk).
+3. **Mylia (Daily Mile LT)**: the 15-minute daily run, with an automatic lap-counting gate and an AI weather/air go/no-go plus class insights (16/18 on paper; ranked 3rd because the AI is thin).
+4. **JudriPamoka (Active Lesson light)**: a classroom CO₂ + sitting-time sensor that triggers AI-generated, subject-linked 3-minute movement breaks. Built on Norway's ASK, physically active learning meta-analyses and Estonia (15/18).
 
 ---
 
@@ -60,9 +60,9 @@ Columns: **R** relatable in 10 s · **T** team authenticity · **P** proven mode
 | # | Idea (proven model → LT version) | R | T | P | W | AI | Pi | Au | Im | L | **Σ** |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | **PertraukųDėžė / RecessBox**: smart schoolyard/corridor equipment locker (student card/QR unlock) + AI "game master" screen that generates a recess game for *these* kids, *this* kit, *this* weather. Adapts Schools on the Move / Schools in Motion + Sportbox | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 1 | **16** |
-| 2 | **Traukinukas**: teen-led walking/bike bus to primary school; GPS "locomotive" tracker gives parents a live map + "bus arriving at your stop" alert; AI clusters home addresses into safe routes. Adapts Bicibús + school streets | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 1 | 2 | **16**→**15** (weather/darkness risk, see profile) |
-| 3 | **Mylia (Daily Mile LT)**: 15-min daily run/walk with a BLE/RFID lap gate that counts laps per child automatically; AI go/no-go on weather/air, class trend insights, flags kids who stop coming out | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | 1 | **16**→**15** (AI thinner) |
-| 4 | **JudriPamoka**: classroom box (CO₂ + PIR/sit-time sensor + LED) signals "time to move" after ~20–25 min sitting or when CO₂ is high; AI generates a 3-minute break *linked to the subject being taught*. Adapts ASK (NO) + physically active learning + Schools in Motion | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 1 | **15**→**14** (AI generation is LLM-light; see profile) |
+| 2 | **Traukinukas**: teen-led walking/bike bus to primary school; GPS "locomotive" tracker gives parents a live map + "bus arriving at your stop" alert; AI clusters home addresses into safe routes. Adapts Bicibús + school streets | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 1 | 2 | **16** (tie-break below 1: weather/darkness and consent risk) |
+| 3 | **Mylia (Daily Mile LT)**: 15-min daily run/walk with a BLE/RFID lap gate that counts laps per child automatically; AI go/no-go on weather/air, class trend insights, flags kids who stop coming out | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | 1 | **16** (tie-break below 1 and 2: AI is thin) |
+| 4 | **JudriPamoka**: classroom box (CO₂ + PIR/sit-time sensor + LED) signals "time to move" after ~20–25 min sitting or when CO₂ is high; AI generates a 3-minute break *linked to the subject being taught*. Adapts ASK (NO) + physically active learning + Schools in Motion | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 1 | **15** |
 | 5 | **junior parkrun LT kit**: bring 2 km junior parkrun to LT towns; team builds a volunteer-light timing kit (BLE tags + phone gateway) | 2 | 2 | 2 | 2 | 1 | 1 | 1 | 1 | 1 | 13 |
 | 6 | **Merginos juda (Girls Active LT)**: girl-led PE redesign; anonymous AI survey-chatbot finds girls' barriers; AI builds a "girls choose the PE unit" plan | 2 | 2 | 2 | 1 | 1 | 2 | 2 | 1 | 1 | 14 |
 | 7 | **Sportbox for yard courts**: app-unlock equipment lockers at Soviet-block courtyard courts and school stadiums (public, not only school) | 2 | 1 | 2 | 2 | 1 | 1 | 1 | 1 | 1 | 12 |
