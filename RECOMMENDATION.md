@@ -1,45 +1,63 @@
-# Recommendation (round 2)
+# Recommendation (round 3: 8 scouts + 4 red-team reviewers)
 
-> Round 1 picked WellWatch (phone reads nitrate strips). Feedback: *"what's the tech help here?"* That was fair: it failed the **collapse test** (remove the tech and the idea mostly still works). Round 2 restarted from technology. See [`ideas/round2-tech-first.md`](ideas/round2-tech-first.md).
+**Process:** 8 parallel research scouts (energy, water/agri, waste, nature, mobility, sport, global winners, LT policy/deadlines) generated ~200 ideas and filtered them against the team's hard criteria ([`research/round3/BRIEF.md`](research/round3/BRIEF.md)). The top 9 were then attacked by 3 red-team reviewers, each from 4 angles: a skeptical Samsung juror, the real customer, a domain scientist, and the 16-year-old team building it. A 4th "gem hunter" searched all 200 for overlooked ideas and hybrids.
 
-## 🥇 BeetleNose (*Miško nosis*): Sustainability
-> *"By the time a spruce turns brown, the beetles have already moved on to the next ten trees. Our €30 sensor smells them in the first week."*
-
-Solar sensor nodes strapped to spruces at high-risk stand edges. A **Bosch BME688 AI e-nose** smells the attack chemistry (tree defence volatiles + beetle aggregation pheromone), and a **microphone hears larvae boring** (168 vs 2.6 "cracks" per minute in infested vs healthy trunks). **LoRa** sends an alert to the forest owner, who removes the tree *before* the brood flies out.
-
-- **What the tech does:** detects things humans physically can't (ppb smells, faint sounds). Satellites only see the damage weeks later. Collapse test ✅.
-- **Real science:** a 2024 Czech study found e-noses (including the BME688) detect an attack **within 1 week**; Fraunhofer showed acoustic detection. **Nobody has turned it into a product** for the 255,000 Lithuanian private forest owners.
-- **Real crisis:** ~1 million m³ of spruce lost in 2023; beetle populations near record levels.
-- **Hardware demo:** open a commercial bark-beetle pheromone lure next to our box on stage and the alert fires.
-- **Honest risk:** it isn't proven to work in a real, windy forest at scale. That's the research frontier. Mitigations: sensors sit on the trunk (not above the canopy), smell + sound as two independent signals, and a spring-2027 field pilot with foresters.
-
-Full deep dive: [`deep-dives/04-beetlenose.md`](deep-dives/04-beetlenose.md)
-
-## 🥈 WellWatch 2.0: Sustainability (keeps the original idea, adds real tech)
-Instead of photographing strips, **build a €50–80 reagent-free UV-LED nitrate sensor** (nitrate absorbs deep-UV light; published low-cost designs exist). An in-well IoT probe gives continuous data, and a handheld version makes school campaigns precise. Keeps all of round 1's strengths (700k well users, 100% groundwater country, policy hook) and fixes the tech gap. The optics are harder to build, and the demo is less "wow" than BeetleNose.
-→ [`deep-dives/01-wellwatch.md` §8](deep-dives/01-wellwatch.md)
-
-## 🥉 SoundCourt: Sport (the best sport idea by far)
-Phone camera + AI + **head-tracked spatial audio** turns the hoop, the ball and each teammate into sound, so **blind kids can play ball games with their sighted class**, not in a separate goalball league. Lithuania's blind goalball team are Paralympic champions (Rio 2016). The demo: **blindfold a judge, they shoot a basket by sound.** Weaker on local scale (small user group) and harder real-time engineering.
-→ [`deep-dives/05-soundcourt.md`](deep-dives/05-soundcourt.md)
-
-## Also strong: Ice-safe 2.0
-Buoys + Stefan's-law physics model + Sentinel-1 satellite → estimated ice thickness for all ~3,000 lakes. Very tech-rich, but has liability and seasonality problems. → [`deep-dives/03-ice-safe.md`](deep-dives/03-ice-safe.md)
-
-## Dropped in round 2
-KneeGuard (AI checks exercise form; overused), microplastic scanner (cool tech, unclear "so what"), smoke fingerprinting (ethics), thermal fawn-rescue drones (already mature in Germany), and more. Reasons are in the round-2 table.
+⚠️ **Caveat:** the session's web-search budget (200 calls) ran out mid-research, so parts of the scout reports rely on search snippets or background knowledge. Every file tags claims as verified/unverified. **The "verify this week" lists below matter.**
 
 ---
 
-## How to choose between the top 3
-| If the team… | Pick |
-|---|---|
-| wants the most original tech + a hardware demo + a national-scale problem | **BeetleNose** |
-| wants the safest, most provable project (real data from real wells in October) with solid hardware | **WellWatch 2.0** |
-| wants sport, emotion, and the most unforgettable live demo | **SoundCourt** |
+## The final 3
 
-## Next steps (stage 1 deadline: **Oct 16**)
-1. Team picks one (or tells me what feels off, and I'll iterate).
-2. I draft the stage 1 idea text (LT + EN).
-3. Order parts (BeetleNose: 2–3 BME688 boards, ESP32s, LoRa modules, mics, a pheromone lure; ~€150–250).
-4. Contact a mentor: LAMMC Institute of Forestry (Girionys) or VMU Agriculture Academy forestry faculty for BeetleNose; NVSPL/municipal public-health bureau for WellWatch; LASUC for SoundCourt.
+### 🥇 BriedisStop: the thermal-AI "fence-end sentinel" (Sustainability → biodiversity/roads)
+**What it physically is:** a pole-mounted box with a thermal camera + an on-device AI (Raspberry Pi/Jetson class) placed where a wildlife fence *ends* or at an underpass. It sees warm bodies day and night, classifies moose/deer/boar, and (stage 2) lights a warning sign **only when an animal is actually there**. Every crossing is logged.
+
+**Who uses it and why:** **Via Lietuva** (the state road agency) spends millions on fences (≈90 km more in 2026) and green bridges, but **doesn't know which ones leak** or where animals go around the fence end. Stage 1 answers that; stage 2 prevents the collision exactly there. One customer, dozens of hotspot units: no "box on every tree".
+
+**Why it's strong:** collisions rose **342 → 1,000/yr (2017→2025)**, €5M+ insured damage, moose ≈ ⅔ of deaths. Animal-detection systems are proven abroad (US, Sweden); ours is a cheap AI version + monitoring. Nature ✔ hardware ✔ AI+IoT ✔ unforgettable demo: *a warm "moose" walks into view → AI labels it → a mini road sign lights up.*
+
+**Honest weaknesses (from the red team):**
+- Cheap thermal sensors (MLX90640) are useless beyond ~15 m. You need a 160–256 px core (Lepton 3.5 / 256-px module, ~€200–300, price unverified) aimed at a short, known zone.
+- Signs alone reduce speed only a few km/h unless paired with a variable speed limit, so the pitch leads with *monitoring*, then *smart warning + 70 km/h*.
+- A 6-week pilot can't show fewer collisions (too rare per site). It shows detection accuracy and false alarms per night.
+- **Must check:** does Via Lietuva (or Estonia) already run animal *detection*? If yes, the novelty drops to "cheaper AI + monitoring".
+
+→ [`research/round3/scout-nature.md`](research/round3/scout-nature.md), [`redteam-C-roads.md`](research/round3/redteam-C-roads.md)
+
+### 🥈 HopperGuard: fire alarm for garbage trucks (Sustainability → waste/batteries)
+**What it physically is:** a ~€300 box on a garbage truck: a **thermal camera over the hopper** (where waste is compacted) + **cheap gas/heat sensors in the load body**. Crushed lithium batteries and vapes start to smoulder; the box warns the driver before the truck (or later the sorting plant) catches fire. Fire events are mapped by route, showing the city where to put battery collection boxes.
+
+**Who uses it and why:** waste operators (Ecoservice, regional waste centres) whose trucks and plants burn. A few hundred trucks nationally, fitted like a reversing camera.
+
+**Why it's strong:** battery-related fires **12 → 21 → 33 (2023–2025)**, a burned sorting plant (~7,500 m²), a Kaunas CHP bunker fire and a Vilnius truck fire in 2025. EU Battery Regulation: **63% portable-battery collection by 2027**. Proven: Goodyear, AZ uses thermal cameras on trash trucks (2025 safety award). The cleanest collapse test of all: nobody can see inside a compacting hopper. Demo: a hidden warm "battery" in a bin → red alarm.
+
+**Honest weaknesses:** thermal runaway can be delayed minutes to hours, hence the second stage (sensors in the load body). Many batteries are inside bags or devices. **Condition:** by ~Oct 20, a waste operator must share footage/fire data or allow a ride-along; otherwise it drops to MAYBE. Not a "nature" idea.
+
+→ [`scout-waste-circular.md`](research/round3/scout-waste-circular.md), [`redteam-B-urban.md`](research/round3/redteam-B-urban.md)
+
+### 🥉 DrainScope: "Fix or Rewet" (Sustainability → water/climate/farming)
+**What it physically is:** software: free **Sentinel-1 radar + Sentinel-2** satellite images + AI that tracks how long every field stays waterlogged after rain/snowmelt. Many fields in one drainage system getting wet together = a **state ditch/collector failure → the municipality's repair list**. One wet field = a private drain → the farmer is notified + pointed to CAP repair grants. A failing system **on peat → "rewet, don't rebuild"** → climate win + EU Nature Restoration Law target.
+
+**Who uses it and why:** municipal drainage specialists (legally must inspect state ditches every ≤3 yrs; the law already uses a ">7 days of pooling" failure sign). **Radviliškis municipality literally published a GovTech Lab challenge asking for this** (Sentinel + AI for drainage); no visible winner.
+
+**Why it's strong:** 2.6 M ha drained, ~74% of drainage worn out; the official map shows 171k ha "poor" vs ~2 M ha per the ministry (a 10× blind spot). Uses 2017–2026 archive data, so a real pilot is possible now. Best policy hook of everything found.
+
+**Honest weaknesses:** the demo is a map (fix: time-lapse + drone footage of a field the official map calls "good" sitting under water). Autumn ploughing confuses radar. **Must check:** was the Radviliškis challenge already solved? Is the state/private split as assumed? Test that a known flooded field actually shows up in the radar data (a 3-day test) before committing.
+
+→ [`scout-water-agri.md`](research/round3/scout-water-agri.md), [`scout-policy.md`](research/round3/scout-policy.md), [`redteam-A-agri.md`](research/round3/redteam-A-agri.md)
+
+---
+
+## Also-rans worth knowing (from the gem hunter, [`redteam-D-gems.md`](research/round3/redteam-D-gems.md))
+- **MedžiųSargas**: IR road thermometers on night vehicles map where streets actually freeze → salt only there; soil-salt survey at dying street trees (Vilnius trees dying; salt visible even in summer). Emotive, cheap, real October data. The headline salt number needs winter.
+- **Dviračio radaras (ArtiMetras + ice)**: a bike box measures how close cars pass (the new 1 m rule is being debated now) + bike-path ice in winter. The best **sport-theme** option; proven (OpenBikeSensor, Germany).
+- **Šernas 360**: hunting clubs' trail cameras + AI give a real wild-boar density (replaces a "pointless" census; African swine fever) + drone crop-damage reports. Strong single user, lower wow.
+
+## Killed in round 3 (with reasons in the files)
+ManureWatch (clouds and snow blind the satellite during the ban), ChimneyWatch (condensing boilers look "worst"; neighbour surveillance), SchoolGate (Telraam already exists; idling invisible to a camera), HeatTwin (the AI adds little; the maintainer has no incentive), ActiveLens (the "phone + AI in the gym" pattern), ŽalosDronas standalone (a human with QGIS does most of it), and more.
+
+## Verify-this-week checklist (before the Oct 16 form)
+| Idea | Check | Kill switch |
+|---|---|---|
+| BriedisStop | Via Lietuva already runs animal detection? · thermal core price/availability · a pilot site with deer traffic + power | Detection already deployed widely in LT |
+| HopperGuard | An operator agrees to data/ride-along · fire service fire stats by cause · Goodyear details | No operator access by ~Oct 20 |
+| DrainScope | Radviliškis challenge status · drainage map + peat layer access · 3-day radar test on a known flooded field | No radar signal / challenge already solved |
