@@ -1,0 +1,18 @@
+# Round 4 shortlist (after 6 scouts, before the judge panel)
+
+The six scouts produced about 140 ideas (see `scout-*.md`). Ideas that several scouts reached independently were merged. The ten below go to the judge panel. Scout scores are out of 18 (9 points × 0–2).
+
+| # | Finalist | What it physically is | Theme | Scout sources (score) |
+|---|---|---|---|---|
+| F1 | **Klasės oras: classroom air & heat coach** | A traffic-light box in each classroom: a CO₂/temperature sensor + ESP32, **or an old Galaxy phone from a drawer** + a €20 CO₂ sensor. The AI predicts when the room will pass 1,500 ppm and tells the teacher *when and for how long* to air it (short full airing, not a tilted window). It also spots windows left open while the heating runs, in kWh and €. | Sustainability (energy + health) | teen-green #1 (17), samsung #1 (18), what-wins #1 (16), abroad-sport #4 JudriPamoka (15), teen-sport GymAir (15) |
+| F2 | **Energijos detektyvai 50/50** | Clamp meters/smart plugs (SmartThings) + AI that learns the school's normal load and flags waste out of hours ("heating on all weekend"); the municipality returns 50% of the savings to the school (Euronet 50/50 model). | Sustainability | abroad-green #3 (16), samsung #2 (17), what-wins #3 (15) |
+| F3 | **DušoSargas / ShowerCoach** | A €15 clip-on shower device (flow + temperature, ESP32, display) shows litres, € and kWh live; the AI recognises which family member is showering and writes a weekly coaching report. Swiss amphiro studies: −22–23%. | Sustainability (home) | abroad-green #1 (17), teen-green #3 (16) |
+| F4 | **Šilumos detektyvai: heat detectives** | The school library lends a phone thermal camera; an AI app turns the images into a family report of where heat escapes, with fixes ranked by €. UK library loan schemes. | Sustainability (home) | teen-green #2 (16), abroad-green #4 (16) |
+| F5 | **Dūmų radaras: smoke radar** | Cheap PM2.5 sensors around the district + an AI forecast of evening chimney-smoke hours → alerts to families of asthmatic kids and PE teachers ("run indoors today"). Adapts AsthmaSense (IE 2025/26 winner). | Sustainability / health | what-wins #2 (16) |
+| F6 | **RecessBox (PertraukųDėžė)** | A schoolyard/corridor kit locker opened with a student card; an AI "game master" picks a game for this group, this kit and this weather and tracks returned items. Adapts Finland's and Estonia's school-activity programmes + German Sportbox lockers. | Sport | abroad-sport #1 (16) |
+| F7 | **Traukinukas: walking/bike bus** | Teens lead younger kids to school on foot; a GPS tracker on the leader's vest → live map and "arriving at your stop" alerts for parents; the AI builds safe routes from home locations + injury hotspots. | Sport + sustainability | abroad-sport #2 (16) |
+| F8 | **HeartSquad: CPR in PE** | A €20–30 home-built CPR manikin with depth/rate sensors + phone-camera AI coaching; a PE lesson becomes CPR training. Denmark: bystander CPR 20% → 77%. | Sport/health | teen-sport #1 (17) |
+| F9 | **Švilpukas ant riešo: whistle on the wrist** | A wristband with on-device AI audio classification hears the referee's whistle and vibrates/flashes for deaf and hard-of-hearing players. | Sport (inclusion) | what-wins #5 (14) |
+| F10 | **Pulso kūno kultūra: heart-rate PE** | PE graded on minutes in your own heart-rate zone (Galaxy Watch / cheap HR band), not sprint times; the AI personalises zones and flags who needs help. Naperville (US) model. | Sport | samsung #3 (17) |
+
+Vetoed despite a high formula score: canteen plate-waste camera (Minova won food waste in 2022; smart scales already run in Alytus-region canteens since Dec 2025).
