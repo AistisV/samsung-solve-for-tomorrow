@@ -1,3 +1,14 @@
+# Current recommendation (round 6, Nov 2026)
+
+After the team found rounds 3–5 too far from students' lives, round 6 followed the pattern of the last three Baltic winners (student-life apps with a working prototype). Five researchers produced ~145 ideas; **4 of 5 independently picked the same one**. Full write-up: [`research/round6/RESULTS.md`](research/round6/RESULTS.md).
+
+- 🥇 **Radinukas** (Sustainability): AI lost-and-found for the school. Photo → AI item card; students search in plain Lithuanian; unclaimed items after 30 days go to a swap rail, charity, Vinted or textile recycling, weighed in kg. The roadmap extends it to šimtadienis/prom outfits and outgrown sports gear (a "school circular shelf").
+- 🥈 **Suolelis / Visi žaidžia** (Sport): AI gives every student who can't do today's PE lesson an adapted task or a real role in the same game, from a teacher-approved list.
+
+Also: moose detection now has Lithuanian prior art (LAUGAS by Dok inovacija); see [`research/official-criteria-scoring.md`](research/official-criteria-scoring.md).
+
+---
+
 # Recommendation (round 4: optimised for winning)
 
 **Process:** after round 3 the team felt its finalists were too "adult" to win. Round 4 re-targeted what actually wins Solve for Tomorrow Baltics: a relatable problem, a proven model abroad, a working prototype, AI that is actually useful, and our own pilot numbers ([`research/round4/BRIEF.md`](research/round4/BRIEF.md)). Six parallel scouts generated about 140 fresh ideas. The 10 best went to a 3-judge panel: a Samsung juror, the real users, and the 16-year-old team that has to build it. Full write-up: [`research/round4/RESULTS.md`](research/round4/RESULTS.md).
