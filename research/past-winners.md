@@ -6,9 +6,9 @@
 | Season | Theme | Known winners / finalists |
 |---|---|---|
 | 2022/23 | Sustainable lifestyle | **Winner (Baltic): "Minova" — Klaipėda** (Deimantė Šileikaitė, Rapolas Žygus). AI app that helps *restaurants* forecast demand and cut food waste. Later represented LT at the first pan-European final in Milan (Oct 2025) — "talks of investment started". |
-| 2023/24 | ? (likely education/AI) | *No data found.* |
+| 2023 season | Bullying / well-being | **1st: BeePeace (EE)**: social app for students and staff to share experiences and anonymously report bullying. **2nd: Eduwave (Vilnius Lyceum, grade 10)**: game-style learning website. 15 teams in the final. |
 | 2024/25 | AI in learning & developing abilities | **1st: Vilnius Lyceum (10th grade)** — AI learning app that adapts to learning style. **2nd: "LaKiKe", Parksepa Keskkool (EE)** — QR code on physical library books → AI animation teaser for grades 1–3 → points → quiz on back cover. €3,000. |
-| 2025/26 | Sport & tech (Milano-Cortina Olympics tie-in). 213 teams Baltic-wide; 37 in EE. | **3rd: "Orientr" / Pentech (Tallinna Reaalkool + GAG, EE)** — AI generates location-based virtual orienteering courses; *had a working prototype*. Other EE finalists: city as gamified "sports map" (points for tasks), AI mental-health + movement app, "solve criminal mysteries while walking" app, Battleship × orienteering movement game. LV finalist: app linking physical activity to screen-time control; app for visiting places in Latvia. 1st/2nd place: *not found.* |
+| 2025/26 | Sport & tech (Milano-Cortina Olympics tie-in). 213 teams Baltic-wide; 37 in EE. | **3rd: "Orientr" / Pentech (Tallinna Reaalkool + GAG, EE)** — AI generates location-based virtual orienteering courses; *had a working prototype*. Other EE finalists: city as gamified "sports map" (points for tasks), AI mental-health + movement app, "solve criminal mysteries while walking" app, Battleship × orienteering movement game. LV finalist: app linking physical activity to screen-time control; app for visiting places in Latvia. **1st: Team Kineto (LV)**: mobile app that analyses young people's calendars to find free slots for movement, gives personal training suggestions, shows bookable sports facilities and local groups/events (final in Riga, 11 Dec 2025, 15 teams). 2nd: not found. Lithuania: special Samsung prize to an 11th-grade Vilnius Lyceum team; partner prizes to other LT teams. |
 | **2026/27 (ours)** | **Sport & tech OR sustainability** | 6th season. Prize fund last year €16–18k: winner €5k cash + €5k Samsung devices. |
 
 ## Patterns — what this tells us
@@ -29,3 +29,8 @@
 - [SfT Baltics — Orientr 3rd place](https://www.solvefortomorrowbaltics.com/et/eesti-noored-saavutasid-baltikumiulesel-samsungi-ideekonkursil-korge-koha/)
 - [LSM — 2025 sport & tech season](https://www.lsm.lv/raksts/zinas/latvija/05.12.2025-inovaciju-konkursa-solve-for-tomorrow-jauniesi-mekle-veidus-sporta-un-tehnologiju-apvienosanai.a625147/)
 - [Õpetajate Leht — 2026 season launch](https://www.opleht.ee/2026/09/vahem-skrollimist-rohkem-lahendusi-aita-opilastel-tehnoloogia-enda-kasuks-toole-panna/)
+
+- [Helge: Kineto 1st, Orientr 3rd](https://helge.app/uudised/eesti-noored-saavutasid-baltikumiulesel-samsungi-ideekonkursil-korge-koha/)
+- [man.lt: LT teams' prizes, Kineto](https://www.man.lt/mokiniu-komandos-is-lietuvos-pelne-apdovanojimus-tarptautiniame-solve-for-tomorrow-ideju-konkurse/)
+- [Žinau viską: Vilnius Lyceum special prize](https://zinauviska.lt/articles/lietuvos-moksleiviu-idejos-sulauke-ekspertu-ivertinimo-tarptautiniame-solve-for-tomorrow-konkurse/)
+- [SfT Baltics 2023 results](https://www.solvefortomorrowbaltics.com/lt/solve-for-tomorrow-2023-kaip-moksleiviu-komandos-pasitelke-technologijas-kuriant-sviesesne-mokiniu-ateiti/)
